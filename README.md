@@ -30,22 +30,22 @@ username varchar(20) unique, email varchar(30) unique, password varchar(100), pr
 Following are some screenshots of the application while running.
 
 #### Home page:
-![Home Page](/images/capture1.png)
+![Home Page](https://github.com/vanigupta20024/BloggyMan/blob/main/images/capture1.PNG)
 
 #### Login page:
-![Login](/images/capture2.png)
+![Login](https://github.com/vanigupta20024/BloggyMan/blob/main/images/capture2.PNG)
 
 #### Write blog page:
-![Write Blog](/images/capture3.png)
+![Write Blog](https://github.com/vanigupta20024/BloggyMan/blob/main/images/capture3.PNG)
 
 #### Blog viewing page:
-![Blog](/images/capture4.png)
+![Blog](https://github.com/vanigupta20024/BloggyMan/blob/main/images/capture4.PNG)
 
 #### Hashed passwords in database:
-![Hashed passwords](/images/capture5.png)
+![Hashed passwords](https://github.com/vanigupta20024/BloggyMan/blob/main/images/capture5.PNG)
 
 ### Todo:
-[x] Session handling
-[x] Can only write blog if authenticated/logged in
-[ ] Deployment on Heroku with database
-[x] Password hashing in the database
+- [x] Session handling
+- [x] Can only write blog if authenticated/logged in
+- [ ] Deployment on Heroku with database
+- [x] Password hashing in the database
