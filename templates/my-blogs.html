@@ -1,0 +1,21 @@
+{% extends 'base.html' %}
+{% block subcontent %}
+	<div class="container">
+	<div class="jumbotron" style="background-color: #F0F8FF;">
+	<div class="text-center">
+		<h2 style="font-family: Garamond, serif;">My blogs</h2><br><br><br>
+	</div>
+	{% if my_blogs %}
+		<table cellpadding="5">
+			{% for my_blog in my_blogs %}
+				<tr>
+					<td style="padding: 0 15px;"><h3><a href="/blogs/{{ my_blog['blog_id'] }}">{{ my_blog['title'] }}</a></h3></td>
+					<td style="padding: 0 15px;"><a href="/edit-blog/{{ my_blog['blog_id'] }}" class="btn btn-primary">Edit</a></td>
+					<td style="padding: 0 15px;"><a href="/delete-blog/{{ my_blog['blog_id'] }}" class="btn btn-primary">Delete</a></td>
+				</tr>
+			{% endfor %}
+		</table>
+	{% endif %}
+	</div>
+</div>
+{% endblock %}

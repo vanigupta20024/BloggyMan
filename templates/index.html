@@ -1,0 +1,18 @@
+{% extends 'base.html' %}
+{% block subcontent %}
+<div style="background-image: url({{ url_for('static', filename='bg.jpg') }})">
+<div class="container">
+	<div class="jumbotron" style="background-color: #F0F8FF;">
+	{% if blogs %}
+		{% for blog in blogs %}
+			<h3><a href="/blogs/{{ blog['blog_id'] }}" style="color:#DC143C">{{ blog['title'] }}</a></h3>
+			<h5>Written by {{ blog['author'] }}</h5>
+			<hr>
+		{% endfor %}
+	{% else %}
+		<h3>No blogs have been written yet!</h3>
+	{% endif %}
+	</div>
+	</div>
+</div>
+{% endblock %}

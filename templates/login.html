@@ -1,0 +1,35 @@
+{% extends 'base.html' %}
+{% block subcontent %}
+<div style="background-image: url('/static/inbg.jpg')">
+	<div class="container" >
+	<div class="jumbotron" style="background-color: #D3D3D3;">
+	<div class="text-center">
+		<h1 style="font-family: Garamond, serif;">User Login</h1><br><br>
+	</div>
+	<div class="text-center">
+	<img src="{{ url_for('static', filename='bloggy.gif')}}" alt="A random gif" width=400 style="margin-bottom:50px" />
+	<h4 style="border: 3px solid Sienna; margin-bottom: 40px; padding-bottom: 10px;padding-top: 10px">A blog for anything ranging from your daily diary to something informational that YOU want to share with the rest of the world!</h4>
+	</div>
+	<form class="form-horizontal" method="POST">
+		<div class="form-group">
+			<label class="control-label col-sm-2" style="font-size: 18px;">Userame</label>
+			<div class = "col-sm-5">
+				<input type="text" name="username" size="30"/>
+			</div>
+		</div>
+		<div class="form-group">
+			<label class="control-label col-sm-2" style="font-size: 18px;">Password</label>
+			<div class = "col-sm-5">
+				<input type="password" name="password" size="30"/>
+			</div>
+		</div>
+		<div class="form-group">
+			<div class="col-sm-offset-2 col-sm-10">
+				<button type="submit" class="btn btn-primary">Submit</button>
+			</div>
+		</div>
+	</form>
+	</div>
+	</div>
+</div>
+{% endblock %}

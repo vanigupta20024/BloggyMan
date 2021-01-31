@@ -1,0 +1,55 @@
+{% extends 'base.html' %}
+{% block subcontent %}
+<div style="background-image: url({{ url_for('static', filename='inbg.jpg') }})">
+	<div class="container" >
+	<div class="jumbotron" style="background-color: #D3D3D3;">
+	<div class="text-center">
+		<h2 style="font-family: Garamond, serif;">User Registration</h2><br><br>
+	</div>
+	<form class="form-horizontal" method="POST">
+		<div class="form-group">
+			<label class="control-label col-sm-2" style="font-size: 18px;">First Name</label>
+			<div class = "col-sm-5">
+				<input type="text" name="first_name" size="30"/>
+			</div>
+		</div>
+		<div class="form-group">
+			<label class="control-label col-sm-2" style="font-size: 18px;">Last Name</label>
+			<div class = "col-sm-5">
+				<input type="text" name="last_name" size="30"/>
+			</div>
+		</div>
+		<div class="form-group">
+			<label class="control-label col-sm-2" style="font-size: 18px;">Username</label>
+			<div class = "col-sm-5">
+				<input type="text" name="username" size="30"/>
+			</div>
+		</div>
+		<div class="form-group">
+			<label class="control-label col-sm-2" style="font-size: 18px;">Email</label>
+			<div class = "col-sm-5">
+				<input type="email" name="email" size="30"/>
+			</div>
+		</div>
+		<div class="form-group">
+			<label class="control-label col-sm-2" style="font-size: 18px;">Password</label>
+			<div class = "col-sm-5">
+				<input type="password" name="password" size="30"/>
+			</div>
+		</div>
+		<div class="form-group">
+			<label class="control-label col-sm-2" style="font-size: 18px;">Confirm Password</label>
+			<div class = "col-sm-5">
+				<input type="password" name="confirm_password" size="30"/>
+			</div>
+		</div>
+		<div class="form-group">
+			<div class="col-sm-offset-2 col-sm-10">
+				<button type="submit" class="btn btn-primary">Submit</button>
+			</div>
+		</div>
+	</form>
+	</div>
+</div>
+</div>
+{% endblock %}
