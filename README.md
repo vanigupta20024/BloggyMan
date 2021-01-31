@@ -1,4 +1,4 @@
-# BloggyMan
+# BloggyMan 
 
 _**A Flask based application for blogging and implementing CRUD through UI by MySql.**_
 
@@ -16,7 +16,8 @@ This application has been made using python flask, MySql, Html, Bootstrap. Funct
 * Create tables `blog` and `user`
 * For `blog` table use command:
 ```
-CREATE TABLE blog(blog_id int auto_increment, title varchar(100), author varchar(40), body varchar(1000), primary key(blog_id));
+CREATE TABLE blog(blog_id int auto_increment, title varchar(100), 
+author varchar(40), body varchar(1000), primary key(blog_id));
 ```
 * For `user` table use command:
 ```
